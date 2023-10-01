@@ -3,11 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Sistema de Inventario</title>
+
   </head>
-  <body>
-    <div id="root"></div>
+  <body class="w-full h-full">
+
+    <h1 class="ml-10 font-bold font-roboto py-10 text-lg">SISTEMA DE INVENTARIO</h1>
+    
+    <form action="POST" class="mx-10 mt-0 font-raleway">
+
+
+      <div class="flex">
+
+        <div class="flex flex-col bg-slate-50 p-5 text-base gap-6" >
+
+          <div>
+            <label for="" class="">Codigo:</label>
+            <input type="text" name="CodigoP" id="CodigoP" placeholder="Código" class="p-1">
+          </div>
+
+          <div>
+            <label for="">Nombre:</label>
+            <input type="text" name="Nombrep" id="NombreP" placeholder="Nombre" class="p-1">
+          </div>
+
+          <div>
+            <label for="">Cantidad:</label>
+            <input type="number" name="Nombrep" id="CantidadP" placeholder="Cantidad" class="p-1">
+          </div>
+
+          <div>
+            <label for="">Descripción:</label>
+            <textarea name="DescripcionP" id="DescripcionP" placeholder="Descripción" class="p-1"> </textarea>
+          </div>
+
+          <div id="root" class="gap-5 flex"></div>
+
+        </div>
+
+        <div class="flex flex-col bg-slate-50 p-5 text-base gap-6">
+
+          <div>
+            <label for="" class="">Precio:</label>
+            <input type="number" name="CodigoP" id="PrecioP" placeholder="Precio" class="p-1">
+          </div>
+
+          <div>
+            <label for="">Proveedor</label>
+            <input type="text" name="ProveedorP" id="" placeholder="Proveedor" class="p-1">
+          </div>
+
+
+
+          
+        </div>
+
+
+      </div>
+
+      
+
+    </form>
+    
+
+
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
