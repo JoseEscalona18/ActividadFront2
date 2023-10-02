@@ -18,6 +18,7 @@ function App() {
         <Home/>
       </div>
       <div className='mb-6'>
+      <h1 className="bg-cyan-600 rounded-lg text-center text-white text-4xl font-bold mb-6 mx-auto max-w-md" >Noticias de la Tecnología</h1>
         <NewsSection/>
       </div>
       <div className='mb-6'>
@@ -25,6 +26,7 @@ function App() {
         <Form/>  
       </div>
       <div className='mb-6'>
+      <h1 className="bg-cyan-600 rounded-lg text-center text-white text-4xl font-bold mb-6 mx-auto max-w-md" >Tabla de Productos / Edición</h1>
         <TablaProductos/>
       </div>
       <Footer/>

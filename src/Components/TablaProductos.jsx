@@ -107,7 +107,7 @@ const TablaProductos = (producto) => {
       />
     </div>
     <button
-      className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      className="text-white bg-blue-700 hover:bg-cyan-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition duration-300"
       type="submit"
     >
       Guardar
@@ -119,7 +119,7 @@ const TablaProductos = (producto) => {
 
   return (
     <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 mb-6">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
             <th scope="col" className="px-6 py-3">
@@ -155,18 +155,21 @@ const TablaProductos = (producto) => {
               <td className="px-6 py-4">{producto.descripcion}</td>
               <td className="px-6 py-4">{producto.precio}</td>
               <td className="px-6 py-4 text-right">
-                <button onClick={() => setProductoEditar(index)}>Editar</button>
+                <button className= "text-white bg-blue-700 hover:bg-cyan-800 font-bold py-2 px-4 rounded-md shadow-lg transform hover:scale-105 transition duration-300"onClick={() => setProductoEditar(index)}>Editar</button>
               </td>
               <td className="px-6 py-4 text-right">
-                <button onClick={() => eliminarProducto(index)}>Eliminar</button>
+                <button className='text-white bg-red-700 hover:bg-cyan-800 font-bold py-2 px-4 rounded-md shadow-lg transform hover:scale-105 transition duration-300' onClick={() => eliminarProducto(index)}>Eliminar</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
-      <button onClick={actualizarTabla}>Actualizar tabla</button>
+      <button onClick={actualizarTabla} className="text-white bg-blue-700 hover:bg-cyan-800 font-bold py-2 px-4 rounded-md shadow-lg transform hover:scale-105 transition duration-300">
+  Actualizar tabla
+</button>
 
     </div>
+
   );
 };
 
