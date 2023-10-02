@@ -7,6 +7,8 @@ const Form = () => {
   const [descripcion, setDescripcion] = useState('');
   const [precio, setPrecio] = useState('');
 
+  
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -97,7 +99,11 @@ const Form = () => {
     </button>
   </div>
 </form>
+
+
   );
 };
+
+
 
 export default Form;

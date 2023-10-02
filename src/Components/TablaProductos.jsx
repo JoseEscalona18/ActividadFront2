@@ -48,6 +48,11 @@ const TablaProductos = (producto) => {
     setPrecio('');
   };
 
+  const actualizarTabla = () => {
+    const productosGuardados = JSON.parse(localStorage.getItem('productos')) || [];
+    setProductos(productosGuardados);
+  };
+
   if (productoEditar !== null) {
     return (
 <div className="bg-gray-500 dark:bg-gray-800 p-6 rounded-lg shadow-md mx-auto max-w-md">
@@ -159,6 +164,8 @@ const TablaProductos = (producto) => {
           ))}
         </tbody>
       </table>
+      <button onClick={actualizarTabla}>Actualizar tabla</button>
+
     </div>
   );
 };
