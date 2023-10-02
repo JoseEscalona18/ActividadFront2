@@ -6,7 +6,6 @@ export default {
   'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   
   theme: {
-    screens: { 'xs': '500px' },
     extend: {},
     fontFamily: {
       'roboto': ['Roboto', 'sans-serif'],

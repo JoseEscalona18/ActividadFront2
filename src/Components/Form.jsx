@@ -53,18 +53,6 @@ const Form = () => {
       />
     </div>
     <div className="flex items-center gap-2">
-      <label className="text-gray-700 font-medium" htmlFor="numeroSerie">
-        Número de Serie:
-      </label>
-      <input
-        className="border border-gray-300 rounded px-2 py-1 focus:border-blue-500 focus:outline-none"
-        type="text"
-        id="numeroSerie"
-        value={numeroSerie}
-        onChange={(e) => setNumeroSerie(e.target.value)}
-      />
-    </div>
-    <div className="flex items-center gap-2">
       <label className="text-gray-700 font-medium" htmlFor="color">
         Color:
       </label>
