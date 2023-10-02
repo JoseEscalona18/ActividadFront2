@@ -8,6 +8,8 @@ const TablaProductos = () => {
   const [descripcion, setDescripcion] = useState('');
   const [precio, setPrecio] = useState('');
 
+  
+
   useEffect(() => {
     const productosGuardados = JSON.parse(localStorage.getItem('productos')) || [];
     setProductos(productosGuardados);
