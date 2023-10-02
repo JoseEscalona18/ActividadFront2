@@ -27,6 +27,7 @@ const Form = () => {
 
     // Guardar la lista actualizada en el localstorage
     localStorage.setItem('productos', JSON.stringify(productos));
+    
 
     // Limpiar los campos del formulario
     setNombre('');

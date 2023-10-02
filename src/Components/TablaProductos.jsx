@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const TablaProductos = () => {
+const TablaProductos = (producto) => {
   const [productos, setProductos] = useState([]);
   const [productoEditar, setProductoEditar] = useState(null);
   const [nombre, setNombre] = useState('');
@@ -8,12 +8,11 @@ const TablaProductos = () => {
   const [descripcion, setDescripcion] = useState('');
   const [precio, setPrecio] = useState('');
 
-  
-
   useEffect(() => {
     const productosGuardados = JSON.parse(localStorage.getItem('productos')) || [];
     setProductos(productosGuardados);
   }, []);
+
 
   useEffect(() => {
     if (productoEditar !== null) {
@@ -32,6 +31,7 @@ const TablaProductos = () => {
     setProductos(nuevosProductos);
     localStorage.setItem('productos', JSON.stringify(nuevosProductos));
     setProductoEditar(null); // Cerrar el formulario de edición
+    limpiarFormulario(); // Limpiar los campos del formulario
   };
 
   const eliminarProducto = (index) => {
@@ -41,38 +41,83 @@ const TablaProductos = () => {
     localStorage.setItem('productos', JSON.stringify(nuevosProductos));
   };
 
+  const limpiarFormulario = () => {
+    setNombre('');
+    setColor('');
+    setDescripcion('');
+    setPrecio('');
+  };
+
   if (productoEditar !== null) {
     return (
-      <div>
-        <h2>Editar Producto</h2>
-        <form onSubmit={guardarProducto}>
-          <label>
-            Nombre:
-            <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
-          </label>
-          <label>
-            Color:
-            <input type="text" value={color} onChange={(e) => setColor(e.target.value)} />
-          </label>
-          <label>
-            Descripcion:
-            <input type="text" value={descripcion} onChange={(e) => setDescripcion(e.target.value)} />
-          </label>
-          <label>
-            Precio:
-            <input type="number" value={precio} onChange={(e) => setPrecio(e.target.value)} />
-          </label>
-          <button type="submit">Guardar</button>
-        </form>
-      </div>
+<div className="bg-gray-500 dark:bg-gray-800 p-6 rounded-lg shadow-md mx-auto max-w-md">
+    <h2 className="text-lg text-white font-semibold mb-4">Editar Producto</h2>
+  <form onSubmit={guardarProducto}>
+    <div className="mb-4">
+      <label className="block text-white  mb-1" htmlFor="nombre">
+        Nombre:
+      </label>
+      <input
+        id="nombre"
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        type="text"
+        value={nombre}
+        onChange={(e) => setNombre(e.target.value)}
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block text-white mb-1" htmlFor="color">
+        Color:
+      </label>
+      <input
+        id="color"
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        type="text"
+        value={color}
+        onChange={(e) => setColor(e.target.value)}
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block text-white mb-1" htmlFor="descripcion">
+        Descripcion:
+      </label>
+      <input
+        id="descripcion"
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        type="text"
+        value={descripcion}
+        onChange={(e) => setDescripcion(e.target.value)}
+      />
+    </div>
+    <div className="mb-4">
+      <label className="block text-white mb-1" htmlFor="precio">
+        Precio:
+      </label>
+      <input
+        id="precio"
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+        type="number"
+        value={precio}
+        onChange={(e) => setPrecio(e.target.value)}
+      />
+    </div>
+    <button
+      className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      type="submit"
+    >
+      Guardar
+    </button>
+  </form>
+</div>
     );
   }
+
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <div className="relative overflow-x-auto shadow-md sm:rounded-lg mx-4 round-lg ">
       <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <thead className="text-xs text-white uppercase bg-gray-900 dark:bg-gray-700 dark:text-gray-400">
           <tr>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="px-6 py-3 ">
               Producto
             </th>
             <th scope="col" className="px-6 py-3">
@@ -87,13 +132,16 @@ const TablaProductos = () => {
             <th scope="col" className="px-6 py-3">
               <span className="sr-only">Edit</span>
             </th>
+            <th scope="col" className="px-6 py-3">
+              <span className="sr-only">Delete</span>
+            </th>
           </tr>
         </thead>
         <tbody>
           {productos.map((producto, index) => (
             <tr
               key={index}
-              className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
+              className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 "
             >
               <th
                 scope="row"
@@ -117,4 +165,5 @@ const TablaProductos = () => {
     </div>
   );
 };
+
 export default TablaProductos;
