@@ -12,7 +12,7 @@ export default {
       'raleway': ['Raleway', 'sans-serif'],
     },
     fontSize:{
-      'xs': '.75rem',
+      'xs': '.60rem',
       'sm': '.875rem',
       'tiny': '.875rem',
       'base': '1rem',
@@ -24,7 +24,15 @@ export default {
       '5xl': '3rem',
       '6xl': '4rem',
       '7xl': '5rem',
+    },
+    screens: {
+      'sm': '320px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
     }
+
   },
   plugins: [
     require('@material-tailwind/react'),

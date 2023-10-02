@@ -118,24 +118,24 @@ const TablaProductos = (producto) => {
   }
 
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-      <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400 mb-6">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+    <div className="relative overflow-x-auto shadow-md sm:rounded-lg items-center flex flex-col">
+      <table className="sm:text-xs md:text-sm text-left text-gray-500 dark:text-gray-400 mb-6 mx-auto">
+        <thead className="text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="sm:p-2 md:px-6 md:py-3">
               Producto
             </th>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="sm:p-2 md:px-6 md:py-3">
               Color
             </th>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="sm:p-2 md:px-6 md:py-3">
               Descripcion
             </th>
-            <th scope="col" className="px-6 py-3">
+            <th scope="col" className="sm:p-2 md:px-6 md:py-3">
               Precio
             </th>
-            <th scope="col" className="px-6 py-3">
-              <span className="sr-only">Edit</span>
+            <th scope="col" className="sm:p-2 md:px-6 md:py-3">
+              Acciones
             </th>
           </tr>
         </thead>
@@ -147,19 +147,18 @@ const TablaProductos = (producto) => {
             >
               <th
                 scope="row"
-                className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                className="sm:p-2 md:px-6 md:py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"
               >
                 {producto.nombre}
               </th>
-              <td className="px-6 py-4">{producto.color}</td>
-              <td className="px-6 py-4">{producto.descripcion}</td>
-              <td className="px-6 py-4">{producto.precio}</td>
-              <td className="px-6 py-4 text-right">
-                <button className= "text-white bg-blue-700 hover:bg-cyan-800 font-bold py-2 px-4 rounded-md shadow-lg transform hover:scale-105 transition duration-300"onClick={() => setProductoEditar(index)}>Editar</button>
+              <td className="sm:p-2 md:px-6 md:py-3">{producto.color}</td>
+              <td className="sm:p-2 md:px-6 md:py-3">{producto.descripcion}</td>
+              <td className="sm:p-2 md:px-6 md:py-3">{producto.precio}</td>
+              <td className="sm:p-2 md:px-6 md:py-3 text-right gap-1 flex flex-col">
+                <button className= "sm:p-2 md:px-6 md:py-3 text-white bg-blue-700 hover:bg-cyan-800 font-bold rounded-md shadow-lg transform hover:scale-105 transition duration-300"onClick={() => setProductoEditar(index)}>Editar</button>
+                <button className='sm:p-2 md:px-6 md:py-3 text-white bg-red-700 hover:bg-cyan-800 font-bold rounded-md shadow-lg transform hover:scale-105 transition duration-300' onClick={() => eliminarProducto(index)}>Eliminar</button>
               </td>
-              <td className="px-6 py-4 text-right">
-                <button className='text-white bg-red-700 hover:bg-cyan-800 font-bold py-2 px-4 rounded-md shadow-lg transform hover:scale-105 transition duration-300' onClick={() => eliminarProducto(index)}>Eliminar</button>
-              </td>
+
             </tr>
           ))}
         </tbody>
