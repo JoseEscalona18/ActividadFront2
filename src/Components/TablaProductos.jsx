@@ -163,7 +163,7 @@ const TablaProductos = (producto) => {
           ))}
         </tbody>
       </table>
-      <button onClick={actualizarTabla} className="text-white bg-blue-700 hover:bg-cyan-800 font-bold py-2 px-4 rounded-md shadow-lg transform hover:scale-105 transition duration-300">
+      <button onClick={actualizarTabla} className="text-white bg-blue-700 hover:bg-cyan-800 font-bold mb-4 py-2 px-4 rounded-md shadow-lg transform hover:scale-105 transition duration-300">
   Actualizar tabla
 </button>
 
