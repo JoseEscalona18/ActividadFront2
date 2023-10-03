@@ -83,18 +83,6 @@ El sistema es sencillo por ahora, básicamente nos permite hacer un CRUD Básico
 
 La carpeta assets/ generalmente se utiliza para almacenar recursos estáticos, como imágenes, archivos de video, fuentes, iconos, etc. Puedes colocar cualquier archivo multimedia o recurso estático que necesites en el proyecto.
 
-
-# **Autores:**
-
-- José Escalona / C.I: 28.206.133
-- Maikel Villegas Rojas / C.I: 30.302.836
-- Luis Monsalve / C.I: 30.380.310
-
-# **Enlaces:**
-
-- Proyecto en GitHub: [https://github.com/JoseEscalona18/ActividadFront2](https://github.com/JoseEscalona18/ActividadFront2)
-
-
 # **Dependencias y DevDependencias**
 
 **Dependencias:**
@@ -134,5 +122,15 @@ La carpeta assets/ generalmente se utiliza para almacenar recursos estáticos, c
 "tailwindcss": "^3.3.3": Framework de utilidades CSS altamente personalizable.
 
 "vite": "^4.4.5": Entorno de compilación rápida para aplicaciones web modernas.
+
+# **Autores:**
+
+- José Escalona / C.I: 28.206.133
+- Maikel Villegas Rojas / C.I: 30.302.836
+- Luis Monsalve / C.I: 30.380.310
+
+# **Enlaces:**
+
+- Proyecto en GitHub: [https://github.com/JoseEscalona18/ActividadFront2](https://github.com/JoseEscalona18/ActividadFront2)
 
 # **Muchas gracias por su atención**
