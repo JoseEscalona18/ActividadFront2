@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 const Form = () => {
   const [nombre, setNombre] = useState('');
-  const [numeroSerie, setNumeroSerie] = useState('');
   const [color, setColor] = useState('');
   const [descripcion, setDescripcion] = useState('');
   const [precio, setPrecio] = useState('');
