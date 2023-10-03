@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 
 const Form = () => {
   const [nombre, setNombre] = useState('');
+  const [numeroSerie, setNumeroSerie] = useState('');
+
   const [color, setColor] = useState('');
   const [descripcion, setDescripcion] = useState('');
   const [precio, setPrecio] = useState('');
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +15,7 @@ const Form = () => {
     // Obtener los datos del localstorage
     let productos = JSON.parse(localStorage.getItem('productos')) || [];
 
-    // Crear un nuevo objeto con los datos del formulario
+    // Crear un nuevo obje781to con los datos del formulario
     const nuevoProducto = {
       nombre,
       numeroSerie,
