@@ -39,7 +39,7 @@ const Form = () => {
   };
 
   return (
-<form onSubmit={handleSubmit} className="container mx-auto p-4 bg-gray-100 shadow-md rounded-lg">
+<form onSubmit={handleSubmit} className="container mx-auto p-4 bg-gray-100 shadow-md rounded-lg shadow-md  max-w-4xl">
   <div className="flex flex-col gap-2">
     <div className="flex flex-col gap-1">
       <label className="text-gray-700 font-medium" htmlFor="nombre">

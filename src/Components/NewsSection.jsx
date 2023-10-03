@@ -13,10 +13,10 @@ function News() {
               src="src\assets\cyberpunk.webp"
               alt="Noticia 1"
             />
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Players Are Having Trouble Activating The Cyberpunk 2077 Expansion’s Final Mission</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Los jugadores tienen problemas para activar la misión final de la expansión Cyberpunk 2077</h3>
             <p className="text-gray-600 mb-4">
-            Cyberpunk 2077 and its Phantom Liberty expansion have a problem with wasting your time. CD Projekt Red’s open-world RPG has a 
-            feature where you have to wait an undetermined amount of time for certain quests to activate, and that persists into Phantom Liberty.
+            Cyberpunk 2077 y su expansión Phantom Liberty tienen un problema con hacerte perder el tiempo. El RPG de mundo abierto de CD Projekt Red tiene una característica 
+            RPG de mundo abierto de CD Projekt Red tiene una característica por la que tienes que esperar una cantidad indeterminada de tiempo para que ciertas misiones se activen, y eso persiste en Phantom Liberty.
             </p>
             <a
               className="text-blue-500 hover:text-blue-700 font-medium"
@@ -35,10 +35,10 @@ function News() {
               src="src\assets\audifonos.webp"
               alt="Noticia 2"
             />
-            <h3 className="text-xl font-bold text-gray-800 mb-2">Beyerdynamic releases its first-ever wireless gaming headset</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Beyerdynamic lanza sus primeros auriculares inalámbricos para juegos</h3>
             <p className="text-gray-600 mb-4">
-            Beyerdynamic is no stranger to the gaming community, as the company’s wired headsets are 
-            regularly seen at professional esports events and the like. 
+            Beyerdynamic no es ajeno a la comunidad de jugadores, ya que los auriculares con cable de la compañía se ven regularmente en eventos de 
+            deportes electrónicos profesionales y similares. se ven con regularidad en eventos deportivos profesionales y similares.
             </p>
             <a
               className="text-blue-500 hover:text-blue-700 font-medium"
@@ -57,11 +57,11 @@ function News() {
               src="src\assets\gamingoferta.webp"
               alt="Noticia 3"
             />
-            <h3 className="text-xl font-bold text-gray-800 mb-2">You can get free games with the Xbox Series X and PlayStation 5 this weekend</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-2">Este fin de semana puedes conseguir juegos gratis con la Xbox Serie X y la PlayStation 5</h3>
             <p className="text-gray-600 mb-4">
-            There’s never been a better time to join the current console generation, thanks to this weekend’s deals. 
-            Current promotions on the Xbox Series X and PlayStation 5 are mighty tempting, as either console comes 
-            with a free game to kickstart your collection. We have more details below.
+            Nunca ha habido mejor momento para unirse a la actual generación de consolas, gracias a las ofertas de este fin de semana. 
+            Las promociones actuales de la Serie X de Xbox y PlayStation 5 son muy tentadoras, ya que cualquiera de las dos consolas viene 
+            con un juego gratis para empezar tu colección. Más detalles a continuación.
             </p>
             <a
               className="text-blue-500 hover:text-blue-700 font-medium"
