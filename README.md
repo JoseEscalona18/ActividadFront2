@@ -41,21 +41,21 @@ El sistema es sencillo por ahora, básicamente nos permite hacer un CRUD Básico
 
 - **node_modules/**: Esta carpeta es generada automáticamente cuando se instalan las dependencias del proyecto utilizando el comando `npm install`. Aquí se almacenan todas las bibliotecas y módulos de terceros necesarios para el funcionamiento del proyecto.
 
-- **public/**: Esta carpeta suele contener los archivos estáticos que se servirán públicamente en el proyecto, como imágenes, archivos CSS o cualquier otro recurso estático. Estos archivos se pueden acceder directamente desde la URL del proyecto.
+- **public/**: Esta carpeta suele contener los archivos estáticos que se servirán públicamente en el proyecto, como imágenes, archivos CSS o cualquier otro recurso estático.
+- 
+- **vite.config.js**: Este archivo es la configuración del entorno de desarrollo basado en Vite. Vite es un entorno de compilación rápida para aplicaciones web modernas. 
 
-- **vite.config.js**: Este archivo es la configuración del entorno de desarrollo basado en Vite. Vite es un entorno de compilación rápida para aplicaciones web modernas. Aquí puedes personalizar diferentes aspectos de tu proyecto, como la configuración del servidor de desarrollo, la configuración de las rutas de construcción, etc.
-
-- **tailwind.config.js**: Este archivo es la configuración de Tailwind CSS, un framework de utilidades CSS altamente personalizable. En este archivo puedes personalizar los estilos predeterminados de Tailwind CSS y agregar tus propias configuraciones.
-
+- **tailwind.config.js**: Este archivo es la configuración de Tailwind CSS, un framework de utilidades CSS altamente personalizable.
+- 
 - **postcss.config.js**: Este archivo es la configuración de PostCSS, una herramienta de transformación de CSS. Aquí puedes especificar los plugins de PostCSS que deseas utilizar y configurar sus opciones.
 
 - **package.json**: Este archivo es un archivo de configuración para administrar las dependencias y scripts de tu proyecto. Aquí se enumeran todas las dependencias del proyecto, así como los scripts definidos que se pueden ejecutar con el comando npm run.
 
-- **package-lock.json**: Este archivo se genera automáticamente cuando se instalan las dependencias del proyecto y se utiliza para bloquear versiones específicas de las dependencias. Ayuda a garantizar que el proyecto tenga las mismas dependencias en diferentes entornos.
+- **package-lock.json**: Este archivo se genera automáticamente cuando se instalan las dependencias del proyecto y se utiliza para bloquear versiones específicas de las dependencias.
 
-- **.gitignore**: Este archivo se utiliza para especificar qué archivos y carpetas deben ser ignorados por Git, el sistema de control de versiones. Los archivos y carpetas enumerados aquí no se incluirán en los commits ni se rastrearán en el repositorio.
+- **.gitignore**: Este archivo se utiliza para especificar qué archivos y carpetas deben ser ignorados por Git, el sistema de control de versiones.
 
-- **eslintrc.cjs**: Este archivo es la configuración de ESLint, una herramienta de análisis de código estático para identificar y reportar patrones problemáticos en el código JavaScript. Aquí puedes configurar las reglas de ESLint y personalizarlas según tus preferencias.
+- **eslintrc.cjs**: Este archivo es la configuración de ESLint, una herramienta de análisis de código estático para identificar y reportar patrones problemáticos en el código JavaScript.
 
 **Carpeta SRC**
 
@@ -82,18 +82,6 @@ El sistema es sencillo por ahora, básicamente nos permite hacer un CRUD Básico
 - **TablaProductos.jsx**: Este archivo define un componente de tabla de productos. Puede contener una tabla con información sobre productos, como nombre, precio, descripción, etc.
 
 La carpeta assets/ generalmente se utiliza para almacenar recursos estáticos, como imágenes, archivos de video, fuentes, iconos, etc. Puedes colocar cualquier archivo multimedia o recurso estático que necesites en el proyecto.
-
-
-# **Autores:**
-
-- José Escalona / C.I: 28.206.133
-- Maikel Villegas Rojas / C.I: 30.302.836
-- Luis Monsalve / C.I: 30.380.310
-
-# **Enlaces:**
-
-- Proyecto en GitHub: [https://github.com/JoseEscalona18/ActividadFront2](https://github.com/JoseEscalona18/ActividadFront2)
-
 
 # **Dependencias y DevDependencias**
 
@@ -134,5 +122,15 @@ La carpeta assets/ generalmente se utiliza para almacenar recursos estáticos, c
 "tailwindcss": "^3.3.3": Framework de utilidades CSS altamente personalizable.
 
 "vite": "^4.4.5": Entorno de compilación rápida para aplicaciones web modernas.
+
+# **Autores:**
+
+- José Escalona / C.I: 28.206.133
+- Maikel Villegas Rojas / C.I: 30.302.836
+- Luis Monsalve / C.I: 30.380.310
+
+# **Enlaces:**
+
+- Proyecto en GitHub: [https://github.com/JoseEscalona18/ActividadFront2](https://github.com/JoseEscalona18/ActividadFront2)
 
 # **Muchas gracias por su atención**
